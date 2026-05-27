@@ -38,6 +38,8 @@
   "files": [
     "bin/",
     "src/",
+    "skills/",
+    "skills-lock.json",
     "LICENSE"
   ],
   "scripts": {

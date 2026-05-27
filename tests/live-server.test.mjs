@@ -9,7 +9,7 @@ import { readFileSync, writeFileSync, mkdirSync, rmSync } from 'node:fs';
 import { join } from 'node:path';
 import { execSync, spawn } from 'node:child_process';
 
-const SERVER_SCRIPT = 'source/skills/impeccable/scripts/live-server.mjs';
+const SERVER_SCRIPT = 'skills/impeccable/scripts/live-server.mjs';
 // Matches LIVE_PID_FILE in live-server.mjs: project root, not tmpdir().
 const PID_FILE = join(process.cwd(), '.impeccable-live.json');
 

@@ -1,4 +1,10 @@
 {
   "version": 1,
-  "skills": {}
+  "skills": {
+    "impeccable": {
+      "version": "2.1.7",
+      "path": "skills/impeccable",
+      "description": "Design, critique, audit, polish, and improve frontend interfaces with domain-specific references and commands."
+    }
+  }
 }

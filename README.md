@@ -1,5 +1,7 @@
 # Impeccable
 
+[![skills.sh](https://skills.sh/b/srinitude/impeccable)](https://skills.sh/s/srinitude/impeccable)
+
 The vocabulary you didn't know you needed. 1 skill, 23 commands, and curated anti-patterns for impeccable frontend design.
 
 > **Quick start:** Visit [impeccable.style](https://impeccable.style) to download ready-to-use bundles.
@@ -11,7 +13,7 @@ Anthropic created [frontend-design](https://github.com/anthropics/skills/tree/ma
 Every LLM learned from the same generic templates. Without guidance, you get the same predictable mistakes: Inter font, purple gradients, cards nested in cards, gray text on colored backgrounds.
 
 Impeccable fights that bias with:
-- **An expanded skill** with 7 domain-specific reference files ([view source](source/skills/impeccable/))
+- **An expanded skill** with 7 domain-specific reference files ([view source](skills/impeccable/))
 - **23 commands** to audit, review, polish, distill, animate, and more
 - **Curated anti-patterns** that explicitly tell the AI what NOT to do
 
@@ -19,17 +21,17 @@ Impeccable fights that bias with:
 
 ### The Skill: impeccable
 
-A comprehensive design skill with 7 domain-specific references ([view skill](source/skills/impeccable/SKILL.md)):
+A comprehensive design skill with 7 domain-specific references ([view skill](skills/impeccable/SKILL.md)):
 
 | Reference | Covers |
 |-----------|--------|
-| [typography](source/skills/impeccable/reference/typography.md) | Type systems, font pairing, modular scales, OpenType |
-| [color-and-contrast](source/skills/impeccable/reference/color-and-contrast.md) | OKLCH, tinted neutrals, dark mode, accessibility |
-| [spatial-design](source/skills/impeccable/reference/spatial-design.md) | Spacing systems, grids, visual hierarchy |
-| [motion-design](source/skills/impeccable/reference/motion-design.md) | Easing curves, staggering, reduced motion |
-| [interaction-design](source/skills/impeccable/reference/interaction-design.md) | Forms, focus states, loading patterns |
-| [responsive-design](source/skills/impeccable/reference/responsive-design.md) | Mobile-first, fluid design, container queries |
-| [ux-writing](source/skills/impeccable/reference/ux-writing.md) | Button labels, error messages, empty states |
+| [typography](skills/impeccable/reference/typography.md) | Type systems, font pairing, modular scales, OpenType |
+| [color-and-contrast](skills/impeccable/reference/color-and-contrast.md) | OKLCH, tinted neutrals, dark mode, accessibility |
+| [spatial-design](skills/impeccable/reference/spatial-design.md) | Spacing systems, grids, visual hierarchy |
+| [motion-design](skills/impeccable/reference/motion-design.md) | Easing curves, staggering, reduced motion |
+| [interaction-design](skills/impeccable/reference/interaction-design.md) | Forms, focus states, loading patterns |
+| [responsive-design](skills/impeccable/reference/responsive-design.md) | Mobile-first, fluid design, container queries |
+| [ux-writing](skills/impeccable/reference/ux-writing.md) | Button labels, error messages, empty states |
 
 ### 23 Commands
 

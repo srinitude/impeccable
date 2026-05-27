@@ -58,7 +58,7 @@ extension/detector/
 evals/
 tests/evals-v2/
 
-# Generated sub-pages (built from source/skills + content/site at build time)
+# Generated sub-pages (built from skills + content/site at build time)
 public/docs/
 public/anti-patterns/
 public/tutorials/
@@ -68,7 +68,7 @@ public/slop/
 # Note: harness skill directories (.claude/skills/, .cursor/skills/, etc.)
 # are intentionally tracked. npx skills reads them from this repo at install
 # time, and they enable clean submodule use. Run `bun run build` to refresh
-# them after editing source/skills/.
+# them after editing skills/.
 #
 # Codex CLI consumes `.agents/skills/`; `.codex/` is not used. Ignore it so
 # local artifacts or old trees are never committed.

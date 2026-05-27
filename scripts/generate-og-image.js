@@ -27,7 +27,7 @@ const EXTENSION_IMAGE_PATH = path.join(
   'extension-detection.png',
 );
 
-// Count user-invocable, non-deprecated skills from source/skills/
+// Count user-invocable, non-deprecated skills from skills/
 // (In v2.0, commands and skills were unified — every command is a skill.)
 function getCommandCount() {
   const skillsDir = path.join(ROOT_DIR, 'source', 'skills');

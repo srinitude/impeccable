@@ -22,7 +22,7 @@ async function readFileContent(filePath) {
 	return readFile(filePath, "utf-8");
 }
 
-// Read all skills from source/skills/ subdirectories
+// Read all skills from skills/ subdirectories
 export async function getSkills() {
 	const skillsDir = join(PROJECT_ROOT, "source", "skills");
 	const entries = await readdir(skillsDir, { withFileTypes: true });
@@ -71,7 +71,7 @@ async function readCommandTagline(id) {
 // list them.
 export async function getCommands() {
 	const allSkills = await getSkills();
-	const metadataPath = join(PROJECT_ROOT, "source/skills/impeccable/scripts/command-metadata.json");
+	const metadataPath = join(PROJECT_ROOT, "skills/impeccable/scripts/command-metadata.json");
 
 	const commands = [];
 	const impeccable = allSkills.find(s => s.name === "impeccable");

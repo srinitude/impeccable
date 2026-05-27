@@ -15,7 +15,7 @@ import {
   findElement,
   findClosingLine,
   detectCommentSyntax,
-} from '../source/skills/impeccable/scripts/live-wrap.mjs';
+} from '../skills/impeccable/scripts/live-wrap.mjs';
 
 // ---------------------------------------------------------------------------
 // Unit tests: pure functions
@@ -223,7 +223,7 @@ describe('wrapCli integration', () => {
     writeFileSync(join(tmp, 'index.html'), html);
 
     const result = JSON.parse(execSync(
-      `node source/skills/impeccable/scripts/live-wrap.mjs --id test123 --count 3 --classes "hero-section" --file "${join(tmp, 'index.html')}"`,
+      `node skills/impeccable/scripts/live-wrap.mjs --id test123 --count 3 --classes "hero-section" --file "${join(tmp, 'index.html')}"`,
       { cwd: process.cwd(), encoding: 'utf-8' }
     ));
 
@@ -257,7 +257,7 @@ describe('wrapCli integration', () => {
     writeFileSync(join(tmp, 'App.jsx'), jsx);
 
     const result = JSON.parse(execSync(
-      `node source/skills/impeccable/scripts/live-wrap.mjs --id jsx123 --count 2 --classes "hero" --file "${join(tmp, 'App.jsx')}"`,
+      `node skills/impeccable/scripts/live-wrap.mjs --id jsx123 --count 2 --classes "hero" --file "${join(tmp, 'App.jsx')}"`,
       { cwd: process.cwd(), encoding: 'utf-8' }
     ));
 
@@ -279,7 +279,7 @@ describe('wrapCli integration', () => {
     writeFileSync(join(tmp, 'page.html'), html);
 
     const result = JSON.parse(execSync(
-      `node source/skills/impeccable/scripts/live-wrap.mjs --id id123 --count 2 --element-id "pricing" --file "${join(tmp, 'page.html')}"`,
+      `node skills/impeccable/scripts/live-wrap.mjs --id id123 --count 2 --element-id "pricing" --file "${join(tmp, 'page.html')}"`,
       { cwd: process.cwd(), encoding: 'utf-8' }
     ));
 
@@ -294,7 +294,7 @@ describe('wrapCli integration', () => {
 
     try {
       execSync(
-        `node source/skills/impeccable/scripts/live-wrap.mjs --id err123 --count 2 --classes "nonexistent" --file "${join(tmp, 'empty.html')}"`,
+        `node skills/impeccable/scripts/live-wrap.mjs --id err123 --count 2 --classes "nonexistent" --file "${join(tmp, 'empty.html')}"`,
         { cwd: process.cwd(), encoding: 'utf-8', stdio: 'pipe' }
       );
       assert.fail('Should have exited with error');
@@ -313,7 +313,7 @@ describe('wrapCli integration', () => {
     writeFileSync(join(tmp, 'preserve.html'), html);
 
     execSync(
-      `node source/skills/impeccable/scripts/live-wrap.mjs --id pres123 --count 2 --classes "target" --file "${join(tmp, 'preserve.html')}"`,
+      `node skills/impeccable/scripts/live-wrap.mjs --id pres123 --count 2 --classes "target" --file "${join(tmp, 'preserve.html')}"`,
       { cwd: process.cwd(), encoding: 'utf-8' }
     );
 
@@ -359,7 +359,7 @@ describe('live-wrap — JSX / TSX correctness', () => {
     writeFileSync(join(tmp, 'page.tsx'), tsx);
 
     execSync(
-      `node source/skills/impeccable/scripts/live-wrap.mjs --id wrapA --count 3 --classes "organic-sand-surface,py-20,lg:py-24" --tag "section" --file "${join(tmp, 'page.tsx')}"`,
+      `node skills/impeccable/scripts/live-wrap.mjs --id wrapA --count 3 --classes "organic-sand-surface,py-20,lg:py-24" --tag "section" --file "${join(tmp, 'page.tsx')}"`,
       { cwd: process.cwd(), encoding: 'utf-8' }
     );
 
@@ -395,7 +395,7 @@ describe('live-wrap — JSX / TSX correctness', () => {
     writeFileSync(join(tmp, 'App.tsx'), tsx);
 
     execSync(
-      `node source/skills/impeccable/scripts/live-wrap.mjs --id jsxStyle --count 3 --classes "target" --tag "section" --file "${join(tmp, 'App.tsx')}"`,
+      `node skills/impeccable/scripts/live-wrap.mjs --id jsxStyle --count 3 --classes "target" --tag "section" --file "${join(tmp, 'App.tsx')}"`,
       { cwd: process.cwd(), encoding: 'utf-8' }
     );
 
@@ -428,7 +428,7 @@ describe('live-wrap — JSX / TSX correctness', () => {
     writeFileSync(join(tmp, 'Page.tsx'), tsx);
 
     execSync(
-      `node source/skills/impeccable/scripts/live-wrap.mjs --id classNameA --count 3 --classes "shared-class,target-marker" --tag "div" --file "${join(tmp, 'Page.tsx')}"`,
+      `node skills/impeccable/scripts/live-wrap.mjs --id classNameA --count 3 --classes "shared-class,target-marker" --tag "div" --file "${join(tmp, 'Page.tsx')}"`,
       { cwd: process.cwd(), encoding: 'utf-8' }
     );
 
@@ -452,7 +452,7 @@ describe('live-wrap — JSX / TSX correctness', () => {
     writeFileSync(join(tmp, 'index.html'), html);
 
     execSync(
-      `node source/skills/impeccable/scripts/live-wrap.mjs --id tagFilter --count 3 --classes "ambiguous-name" --tag "section" --file "${join(tmp, 'index.html')}"`,
+      `node skills/impeccable/scripts/live-wrap.mjs --id tagFilter --count 3 --classes "ambiguous-name" --tag "section" --file "${join(tmp, 'index.html')}"`,
       { cwd: process.cwd(), encoding: 'utf-8' }
     );
 

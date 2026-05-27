@@ -149,11 +149,11 @@ export function readFilesRecursive(dir, fileList = []) {
 
 /**
  * Read and parse all source files (unified skills architecture)
- * All source lives in source/skills/{name}/SKILL.md
+ * All source lives in skills/{name}/SKILL.md
  * Returns { skills } where each skill has userInvocable flag
  */
 export function readSourceFiles(rootDir) {
-  const skillsDir = path.join(rootDir, 'source/skills');
+  const skillsDir = path.join(rootDir, 'skills');
 
   const skills = [];
 
@@ -364,7 +364,7 @@ export function readPatterns(_rootDir, _relativePath) {
 
 // Previous SKILL.md parser retained below but disabled; kept as a
 // reference for how prefix-style extraction used to work.
-function _legacyReadPatterns(rootDir, relativePath = 'source/skills/impeccable/SKILL.md') {
+function _legacyReadPatterns(rootDir, relativePath = 'skills/impeccable/SKILL.md') {
   const skillPath = path.join(rootDir, relativePath);
 
   if (!fs.existsSync(skillPath)) {

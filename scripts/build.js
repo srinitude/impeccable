@@ -413,13 +413,13 @@ function generateApiData(buildDir, skills, patterns) {
     return taglineMatch ? taglineMatch[1] : null;
   };
 
-  const metadataPath = path.join(ROOT_DIR, 'source/skills/impeccable/scripts/command-metadata.json');
+  const metadataPath = path.join(ROOT_DIR, 'skills/impeccable/scripts/command-metadata.json');
   if (!fs.existsSync(metadataPath)) {
     throw new Error(`command-metadata.json is missing at ${metadataPath}. This file is required to generate the commands API.`);
   }
   const impeccable = skills.find(s => s.name === 'impeccable');
   if (!impeccable) {
-    throw new Error('impeccable skill not found in source/skills/. The build system expects a single impeccable skill.');
+    throw new Error('impeccable skill not found in skills/. The build system expects a single impeccable skill.');
   }
 
   const metadata = JSON.parse(fs.readFileSync(metadataPath, 'utf-8'));

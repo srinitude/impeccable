@@ -135,7 +135,7 @@ license: MIT
 
 This is a test skill body.`;
 
-    const skillDir = path.join(TEST_DIR, 'source/skills/test-skill');
+    const skillDir = path.join(TEST_DIR, 'skills/test-skill');
     fs.mkdirSync(skillDir, { recursive: true });
     fs.writeFileSync(path.join(skillDir, 'SKILL.md'), skillContent);
 
@@ -172,7 +172,7 @@ argument-hint: "[TARGET=<value>]"
 
 Please audit {{target}} for technical quality. Ask {{model}} for help.`;
 
-    const skillDir = path.join(TEST_DIR, 'source/skills/audit');
+    const skillDir = path.join(TEST_DIR, 'skills/audit');
     fs.mkdirSync(skillDir, { recursive: true });
     fs.writeFileSync(path.join(skillDir, 'SKILL.md'), skillContent);
 
@@ -214,11 +214,11 @@ Please audit {{target}} for technical quality. Ask {{model}} for help.`;
   });
 
   test('integration: multiple skills', () => {
-    const skill1Dir = path.join(TEST_DIR, 'source/skills/skill1');
+    const skill1Dir = path.join(TEST_DIR, 'skills/skill1');
     fs.mkdirSync(skill1Dir, { recursive: true });
     fs.writeFileSync(path.join(skill1Dir, 'SKILL.md'), '---\nname: skill1\n---\nSkill1');
 
-    const skill2Dir = path.join(TEST_DIR, 'source/skills/skill2');
+    const skill2Dir = path.join(TEST_DIR, 'skills/skill2');
     fs.mkdirSync(skill2Dir, { recursive: true });
     fs.writeFileSync(path.join(skill2Dir, 'SKILL.md'), '---\nname: skill2\n---\nSkill2');
 

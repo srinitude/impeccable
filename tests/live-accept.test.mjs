@@ -12,7 +12,7 @@ import { fileURLToPath } from 'node:url';
 import { execFileSync } from 'node:child_process';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
-const ACCEPT = resolve(__dirname, '..', 'source/skills/impeccable/scripts/live-accept.mjs');
+const ACCEPT = resolve(__dirname, '..', 'skills/impeccable/scripts/live-accept.mjs');
 
 function runAccept(cwd, args) {
   try {
